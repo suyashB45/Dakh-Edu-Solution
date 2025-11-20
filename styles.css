@@ -1,0 +1,60 @@
+/* Advanced Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 10px;
+    border: 2px solid #f8fafc;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Aurora Background Utility */
+.bg-aurora {
+    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15), transparent 50%),
+                radial-gradient(circle at 0% 0%, rgba(14, 165, 233, 0.1), transparent 50%),
+                radial-gradient(circle at 100% 0%, rgba(236, 72, 153, 0.1), transparent 50%);
+    filter: blur(40px);
+    z-index: 0;
+}
+
+/* Glassmorphism 3.0 */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+}
+
+/* Mesh Grid Pattern */
+.bg-grid-slate-100 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(241 245 249 / 0.8)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+/* Shine Effect */
+.shine {
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+}
+
+.nav-link.active {
+    color: #4f46e5;
+}
+
+/* Custom selection color */
+::selection {
+    background-color: #6366f1;
+    color: white;
+}
