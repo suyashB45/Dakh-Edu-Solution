@@ -16,6 +16,9 @@ CORS(app)
 MESSAGES_FILE = 'messages.xlsx'
 APPLICATIONS_FILE = 'applications.xlsx'
 
+# Office / Visit address used in site and emails
+OFFICE_ADDRESS = 'Sri Sai Ram Engineering College, West Tambaram, Chennai, Tamil Nadu, India'
+
 SMTP_HOST = os.getenv('SMTP_HOST')
 SMTP_PORT = int(os.getenv('SMTP_PORT') or 0)
 SMTP_USER = os.getenv('SMTP_USER')
