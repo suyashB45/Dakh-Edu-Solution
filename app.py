@@ -87,7 +87,9 @@ def submit_message():
         'message': message
     }
     try:
-        save_to_excel(MESSAGES_FILE, list(row.keys()), row)
+        # Use fixed column ordering for messages
+        msg_cols = ['timestamp', 'name', 'email', 'interest', 'message']
+        save_to_excel(MESSAGES_FILE, msg_cols, row)
     except Exception as e:
         return jsonify(success=False, message=f'Failed to save: {e}'), 500
 
@@ -121,7 +123,9 @@ def apply():
         'role': role
     }
     try:
-        save_to_excel(APPLICATIONS_FILE, list(row.keys()), row)
+        # Use fixed column ordering for applications
+        app_cols = ['timestamp', 'name', 'phone', 'email', 'college', 'resume', 'role']
+        save_to_excel(APPLICATIONS_FILE, app_cols, row)
     except Exception as e:
         return jsonify(success=False, message=f'Failed to save: {e}'), 500
 
