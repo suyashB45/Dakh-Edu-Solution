@@ -58,3 +58,49 @@
     background-color: #6366f1;
     color: white;
 }
+
+/* Reveal on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms cubic-bezier(.2,.8,.2,1), transform 600ms cubic-bezier(.2,.8,.2,1);
+}
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slight stagger helper */
+.reveal[data-delay="100"] { transition-delay: 100ms; }
+.reveal[data-delay="200"] { transition-delay: 200ms; }
+.reveal[data-delay="300"] { transition-delay: 300ms; }
+
+/* Parallax hero background */
+.parallax-bg {
+    transform: translate3d(0,0,0);
+    will-change: transform;
+}
+
+/* Accessibility: focus visible for interactive elements */
+button:focus, input:focus, select:focus, textarea:focus, a:focus {
+    outline: 3px solid rgba(99,102,241,0.16);
+    outline-offset: 3px;
+}
+
+/* Slight card lift on hover */
+.group:hover {
+    transform: translateY(-6px);
+    transition: transform 300ms ease;
+}
+
+/* Improve CTA hover */
+.bg-brand-600:hover, .bg-slate-900:hover {
+    transform: translateY(-4px);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+/* Make nav link active more visible */
+.nav-link.active {
+    color: #4f46e5;
+    font-weight: 700;
+}

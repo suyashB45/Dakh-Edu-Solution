@@ -94,7 +94,7 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-grid-slate-100">
         <!-- Background Aurora -->
-        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden parallax-bg">
             <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-purple-400/20 blur-[80px] animate-aurora"></div>
             <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-brand-500/20 blur-[80px] animate-aurora" style="animation-delay: -5s;"></div>
         </div>
@@ -103,7 +103,7 @@
             <div class="grid lg:grid-cols-12 gap-16 items-center">
                 <div class="lg:col-span-7" data-aos="fade-right" data-aos-duration="1000">
                     <!-- Badge -->
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-brand-100 text-brand-700 text-xs font-bold mb-8 shadow-sm hover:shadow-md transition-all cursor-default tracking-wide uppercase">
+                    <div class="inline-flex reveal" data-delay="100" items-center gap-2 px-4 py-2 rounded-full bg-white border border-brand-100 text-brand-700 text-xs font-bold mb-8 shadow-sm hover:shadow-md transition-all cursor-default tracking-wide uppercase">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
@@ -112,7 +112,7 @@
                     </div>
                     
                     <!-- Main Title -->
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
+                    <h1 class="reveal text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight" data-delay="150">
                         Build the <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600">Future</span><br>
                         Invest in <span class="relative inline-block">
                             Skills
@@ -122,12 +122,12 @@
                         </span>
                     </h1>
                     
-                    <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-lg font-light">
+                    <p class="reveal text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-lg font-light" data-delay="200">
                         Dakh Edu Solution is a new-age startup run by students, for students. Join our <span class="font-semibold text-slate-900 bg-brand-50 px-1 rounded">premium paid training</span>, work on live projects, and bridge the gap between theory and industry.
                     </p>
                     
                     <!-- Buttons -->
-                    <div class="flex flex-wrap gap-4">
+                    <div class="flex flex-wrap gap-4 reveal" data-delay="300">
                         <a href="#internships" class="px-8 py-4 rounded-2xl bg-slate-900 text-white font-bold shadow-xl shadow-slate-900/20 hover:bg-brand-600 hover:shadow-brand-600/30 hover:-translate-y-1 transition-all active:scale-95 flex items-center gap-2">
                             <span>Explore Programs</span>
                             <i class="fa-solid fa-arrow-right text-sm"></i>
@@ -158,7 +158,7 @@
                 </div>
                 
                 <!-- Hero Image -->
-                <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-duration="1000">
+                <div class="lg:col-span-5 relative reveal" data-aos="fade-left" data-aos-duration="1000" data-delay="350">
                     <div class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-brand-900/10 border-8 border-white transform rotate-3 hover:rotate-0 transition-transform duration-700 ease-out bg-white">
                         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Collaborative Tech Community" class="w-full h-[500px] object-cover">
                         
@@ -210,7 +210,7 @@
     <!-- About Section (Bento Grid) -->
     <section id="about" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal" data-aos="fade-up" data-delay="200">
                 <div class="inline-block px-3 py-1 rounded-full bg-brand-50 text-brand-600 text-sm font-bold mb-4">Who We Are</div>
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">We Don't Just Teach,<br>We <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600">Transform Careers.</span></h2>
             </div>
@@ -272,7 +272,7 @@
     <section id="internships" class="py-24 bg-slate-50 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div data-aos="fade-right">
+                <div class="reveal" data-aos="fade-right" data-delay="150">
                     <h2 class="text-4xl font-display font-bold text-slate-900 mb-4">Training & Internships</h2>
                     <p class="text-slate-600 max-w-xl text-lg">Comprehensive training programs designed to make you industry-ready.</p>
                 </div>
@@ -413,7 +413,7 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-20">
-                <div data-aos="fade-right">
+                <div class="reveal" data-aos="fade-right" data-delay="160">
                     <h2 class="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">Let's Build Something<br><span class="text-brand-500">Amazing.</span></h2>
                     <p class="text-slate-400 mb-12 text-lg leading-relaxed">Ready to start your journey? Reach out to us for paid internships, partnerships, or general inquiries.</p>
                     
@@ -447,26 +447,26 @@
                 </div>
 
                 <!-- Form -->
-                <div class="bg-white rounded-[2.5rem] p-8 md:p-12 text-slate-800 shadow-2xl" data-aos="fade-left">
+                <div class="bg-white rounded-[2.5rem] p-8 md:p-12 text-slate-800 shadow-2xl reveal" data-aos="fade-left" data-delay="180">
                     <h3 class="text-2xl font-display font-bold mb-6">Send a Message</h3>
-                    <form onsubmit="handleSubmit(event)" class="space-y-5">
+                    <form id="contact-form" onsubmit="handleSubmit(event)" class="space-y-5" aria-label="Contact form">
                         <div class="grid md:grid-cols-2 gap-5">
                             <div class="group">
-                                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Name</label>
-                                <input type="text" required class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium" placeholder="John Doe">
+                                <label for="contact-name" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Name</label>
+                                <input id="contact-name" name="name" type="text" required class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium" placeholder="John Doe">
                             </div>
                             <div class="group">
-                                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Email</label>
-                                <input type="email" required class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium" placeholder="john@example.com">
+                                <label for="contact-email" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Email</label>
+                                <input id="contact-email" name="email" type="email" required class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium" placeholder="john@example.com">
                             </div>
                         </div>
                         <div class="group">
                             <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Interest</label>
                             <div class="relative">
-                                <select class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium appearance-none cursor-pointer">
-                                    <option>Paid Internships</option>
-                                    <option>Corporate Training</option>
-                                    <option>Partnership</option>
+                                <select id="contact-interest" name="interest" class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium appearance-none cursor-pointer">
+                                    <option value="Paid Internships">Paid Internships</option>
+                                    <option value="Corporate Training">Corporate Training</option>
+                                    <option value="Partnership">Partnership</option>
                                 </select>
                                 <div class="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
@@ -475,9 +475,9 @@
                         </div>
                         <div class="group">
                             <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Message</label>
-                            <textarea rows="4" required class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium resize-none" placeholder="Tell us more..."></textarea>
+                            <textarea id="contact-message" name="message" rows="4" required class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all font-medium resize-none" placeholder="Tell us more..."></textarea>
                         </div>
-                        <button type="submit" class="w-full py-4 px-6 rounded-2xl bg-slate-900 text-white font-bold text-lg hover:bg-brand-600 shadow-xl shadow-slate-900/20 transition-all transform hover:-translate-y-1 active:scale-95">
+                        <button id="contact-submit" type="submit" class="w-full py-4 px-6 rounded-2xl bg-slate-900 text-white font-bold text-lg hover:bg-brand-600 shadow-xl shadow-slate-900/20 transition-all transform hover:-translate-y-1 active:scale-95">
                             Send Message
                         </button>
                     </form>
@@ -558,28 +558,28 @@
                     </button>
                 </div>
                 <div class="p-8 overflow-y-auto custom-scrollbar">
-                    <form onsubmit="handleApply(event)" class="space-y-6">
+                    <form id="apply-form" onsubmit="handleApply(event)" class="space-y-6" aria-label="Application form">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Full Name</label>
-                                <input type="text" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="e.g. Rahul Kumar">
+                                <label for="apply-name" class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Full Name</label>
+                                <input id="apply-name" name="name" type="text" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="e.g. Rahul Kumar">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Phone</label>
-                                <input type="tel" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="+91 98765 43210">
+                                <label for="apply-phone" class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Phone</label>
+                                <input id="apply-phone" name="phone" type="tel" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="+91 98765 43210">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Email</label>
-                            <input type="email" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="rahul@college.edu">
+                            <label for="apply-email" class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Email</label>
+                            <input id="apply-email" name="email" type="email" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="rahul@college.edu">
                         </div>
                          <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">College</label>
-                            <input type="text" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="University Name">
+                            <label for="apply-college" class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">College</label>
+                            <input id="apply-college" name="college" type="text" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="University Name">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Resume Link (Drive/Dropbox)</label>
-                            <input type="url" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="https://...">
+                            <label for="apply-resume" class="block text-xs font-bold text-slate-500 uppercase mb-2 ml-1">Resume Link (Drive/Dropbox)</label>
+                            <input id="apply-resume" name="resume" type="url" required class="w-full p-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-500 outline-none" placeholder="https://...">
                         </div>
                         <div class="flex items-start gap-3 p-4 bg-brand-50 rounded-xl border border-brand-100">
                             <input type="checkbox" required id="terms" class="mt-1 w-4 h-4 text-brand-600 rounded border-brand-300 focus:ring-brand-500">
@@ -587,7 +587,7 @@
                                 I understand this is a <strong>Paid Training Program</strong>.
                             </label>
                         </div>
-                        <button type="submit" class="w-full py-4 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition-all">
+                        <button id="apply-submit" type="submit" class="w-full py-4 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition-all">
                             Submit Application
                         </button>
                     </form>

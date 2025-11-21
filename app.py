@@ -24,15 +24,28 @@ RECIPIENT_EMAIL = os.getenv('RECIPIENT_EMAIL')
 
 
 def save_to_excel(path, columns, row_values):
-    # row_values should be a dict matching columns
+    # Ensure a stable column order when writing rows to Excel.
+    # `columns` should be the desired column ordering list.
+    new_row = pd.DataFrame([row_values])
+    # Reindex new_row to have all desired columns (missing columns will be created)
+    new_row = new_row.reindex(columns=columns)
+
     if os.path.exists(path):
         try:
             df = pd.read_excel(path)
-            df = df.append(row_values, ignore_index=True)
+            # Ensure existing dataframe has the desired columns (add missing)
+            for c in columns:
+                if c not in df.columns:
+                    df[c] = None
+            # Reorder existing df to desired columns
+            df = df[columns]
+            # Append new row
+            df = pd.concat([df, new_row], ignore_index=True, sort=False)
         except Exception:
-            df = pd.DataFrame([row_values], columns=columns)
+            df = new_row
     else:
-        df = pd.DataFrame([row_values], columns=columns)
+        df = new_row
+    # Write using the specified column order
     df.to_excel(path, index=False)
 
 
