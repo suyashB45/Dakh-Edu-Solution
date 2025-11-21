@@ -98,6 +98,8 @@ def submit_message():
 
     subject = f'New message from {name or "Website"}'
     body = f"Time: {ts}\nName: {name}\nEmail: {email}\nInterest: {interest}\n\nMessage:\n{message}"
+    # include office address in notification for quick reference
+    body = body + f"\n\nOffice: {OFFICE_ADDRESS}"
     ok, info = send_email(subject, body)
     if not ok:
         # still return success but inform about email
@@ -134,6 +136,8 @@ def apply():
 
     subject = f'New application: {role} - {name}'
     body = "\n".join([f"{k}: {v}" for k, v in row.items()])
+    # append office address to the email body
+    body = body + f"\n\nOffice: {OFFICE_ADDRESS}"
     ok, info = send_email(subject, body)
     if not ok:
         return jsonify(success=True, message='Saved but email not sent: ' + info)
